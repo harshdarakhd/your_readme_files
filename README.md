@@ -12,3 +12,24 @@
   -simply use the portainer click on your container click on duplicate edit and change your container version and deploy
   
  
+# your influx2.0 dbr mappping for running query in influx1.0
+  -influx2.0 uses the flux database
+  -influx1.0 uses QL database
+  -so missverion he dont except the commands of v2 in v1
+  -i.e why we can map using dbr mapping
+  -
+
+############################# INFLUX DB ################################################################
+
+influx v1 dbrp create --db people-counting --rp autogen --bucket-id a681dc0dc3d6dd31 --default --org smarti --token -PfPbsN-HEOL_rH-ydFg_UfSslXjD-ir59yV1WEBITv5SsDovNTK9GmC19CGZ93TQ6MqrDNWoVgx12kc_Qhb9Q==
+
+
+
+ID                      Database        Bucket ID               Retention Policy        Default Organization ID
+0a133836026a2000        people-counting a681dc0dc3d6dd31        autogen                 true    6f74bb30691fdd56
+
+
+
+https://community.influxdata.com/t/how-to-connect-grafana-to-influxdbv2-by-influxql-method/17377/12?u=grant1
+
+############################# INFLUX DB ################################################################
