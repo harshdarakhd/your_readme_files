@@ -33,3 +33,6 @@ ID                      Database        Bucket ID               Retention Policy
 https://community.influxdata.com/t/how-to-connect-grafana-to-influxdbv2-by-influxql-method/17377/12?u=grant1
 
 ############################# INFLUX DB ################################################################
+
+# to use ago, just now time in react js use moment 
+  - moment.utc("2019-12-04 12:00:24").local().startOf('seconds').fromNow()
