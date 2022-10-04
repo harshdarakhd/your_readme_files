@@ -36,3 +36,8 @@ https://community.influxdata.com/t/how-to-connect-grafana-to-influxdbv2-by-influ
 
 # to use ago, just now time in react js use moment 
   - moment.utc("2019-12-04 12:00:24").local().startOf('seconds').fromNow()
+  - moment("20111031", "YYYYMMDD").fromNow(); // 8 years ago
+  -moment("20120620", "YYYYMMDD").fromNow(); // 7 years ago
+  -moment().startOf('day').fromNow();        // 16 hours ago
+  -moment().endOf('day').fromNow();          // in 8 hours
+  -moment().startOf('hour').fromNow();  
