@@ -41,3 +41,7 @@ https://community.influxdata.com/t/how-to-connect-grafana-to-influxdbv2-by-influ
   -moment().startOf('day').fromNow();        // 16 hours ago
   -moment().endOf('day').fromNow();          // in 8 hours
   -moment().startOf('hour').fromNow();  
+  
+  
+  # to convert query time in time format  
+    -fetch time convert to string to 
