@@ -32,6 +32,24 @@ ID                      Database        Bucket ID               Retention Policy
 
 https://community.influxdata.com/t/how-to-connect-grafana-to-influxdbv2-by-influxql-method/17377/12?u=grant1
 
+
+##################################### redis setup   ###################################################
+ cmd :
+  1. docker pull redis:6
+  2. docker run -d --name redis -p 6379:6379 redis
+  
+ - go to the portainer and click on redis container click on duploicate button and choose option first change the port 
+ *** Publish all exposed network ports to random host ports ** please unabele this option and disable *** Enable access control  ***
+ 
+
+
+
+
+
+
+
+
+
 ############################# INFLUX DB ################################################################
 
 # to use ago, just now time in react js use moment 
