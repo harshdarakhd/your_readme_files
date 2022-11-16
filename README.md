@@ -63,3 +63,8 @@ https://community.influxdata.com/t/how-to-connect-grafana-to-influxdbv2-by-influ
   
   # to convert query time in time format  
     -fetch time convert to string to 
+    
+    
+    ##########################################  react ####################################################
+    
+    npm i react-router-dom --force   or npm i anylibirary --legacy-peer-deps  // use for unable salved dependency tree error
