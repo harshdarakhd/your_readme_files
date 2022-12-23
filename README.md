@@ -68,3 +68,10 @@ https://community.influxdata.com/t/how-to-connect-grafana-to-influxdbv2-by-influ
     ##########################################  react ####################################################
     
     npm i react-router-dom --force   or npm i anylibirary --legacy-peer-deps  // use for unable salved dependency tree error
+    
+    
+    
+        ########################################## for UML sequence diagram diagram ####################################################
+        1. go to visual studio and install palntuml dependecies
+        2. seq.uml
+   
