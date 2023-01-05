@@ -75,3 +75,8 @@ https://community.influxdata.com/t/how-to-connect-grafana-to-influxdbv2-by-influ
         1. go to visual studio and install palntuml dependecies
         2. seq.uml
    
+############################ postgres set maxval ################################################
+purpose : to increment the default set primary key value 
+reason : postgres has set default value as as starting i.e. current value so we need to told postgres please set you highest value which you not use
+SELECT setval('product_master_product_id_seq',
+    (SELECT MAX(product_id) FROM product_master));
