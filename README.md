@@ -80,3 +80,26 @@ purpose : to increment the default set primary key value
 reason : postgres has set default value as as starting i.e. current value so we need to told postgres please set you highest value which you not use
 SELECT setval('product_master_product_id_seq',
     (SELECT MAX(product_id) FROM product_master));
+    
+    
+=================================== create only one database access user =========================================================
+
+-- Create Role First
+CREATE ROLE tagid_genesis_read;
+GRANT CONNECT ON DATABASE tagid_chunmun_ginesys TO tagid_genesis_read;
+
+-- For Read/Write Access To the Above Created ROLE.
+CREATE SCHEMA tagid_gen_schema;
+GRANT USAGE, CREATE ON SCHEMA tagid_gen_schema TO tagid_genesis_read;
+GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA tagid_gen_schema TO tagid_genesis_read;
+ALTER DEFAULT PRIVILEGES IN SCHEMA tagid_gen_schema GRANT SELECT,INSERT,UPDATE,DELETE ON TABLES TO tagid_genesis_read;
+GRANT USAGE ON ALL SEQUENCES IN SCHEMA tagid_gen_schema TO tagid_genesis_read;
+ALTER DEFAULT PRIVILEGES IN SCHEMA tagid_gen_schema GRANT USAGE ON SEQUENCES TO tagid_genesis_read;
+
+
+-- Grant the Above Created ROLE to the said User.
+GRANT tagid_genesis_read TO nitin;
+https://www.youtube.com/watch?v=-2kYJ0gZmCo
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO nitin;
+
+==============================================================================================================================
