@@ -103,3 +103,25 @@ https://www.youtube.com/watch?v=-2kYJ0gZmCo
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO nitin;
 
 ==============================================================================================================================
+**git vscode setup**
+git fetch --all
+
+Fetching origin
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/iam-rnd/tagid-dashbord-ui.git/'
+error: Could not fetch origin
+
+
+git remote -v
+
+origin  https://github.com/iam-rnd/tagid-dashbord-ui.git (fetch)
+origin  https://github.com/iam-rnd/tagid-dashbord-ui.git (push)
+
+
+git remote set-url origin https://token@github.com/iam-rnd/tagid-dashbord-ui.git
+
+origin  https://token@github.com/iam-rnd/tagid-dashbord-ui.git (fetch)
+origin  https://token@github.com/iam-rnd/tagid-dashbord-ui.git (push)
+
+git remote -v
+
