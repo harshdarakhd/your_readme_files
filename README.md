@@ -102,7 +102,7 @@ GRANT tagid_genesis_read TO nitin;
 https://www.youtube.com/watch?v=-2kYJ0gZmCo
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO nitin;
 
-===============================================================================
+==================================================================================================
 **git vscode setup**
 git fetch --all
 
