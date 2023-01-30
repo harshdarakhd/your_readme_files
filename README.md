@@ -19,7 +19,7 @@
   -i.e why we can map using dbr mapping
   -
 
-############################# INFLUX DB ################################################################
+############################# INFLUX DB ############################
 
 influx v1 dbrp create --db people-counting --rp autogen --bucket-id a681dc0dc3d6dd31 --default --org smarti --token -PfPbsN-HEOL_rH-ydFg_UfSslXjD-ir59yV1WEBITv5SsDovNTK9GmC19CGZ93TQ6MqrDNWoVgx12kc_Qhb9Q==
 
@@ -33,7 +33,7 @@ ID                      Database        Bucket ID               Retention Policy
 https://community.influxdata.com/t/how-to-connect-grafana-to-influxdbv2-by-influxql-method/17377/12?u=grant1
 
 
-##################################### redis setup   ###################################################
+##################################### redis setup   ################################
  cmd :
   1. docker pull redis:6
   2. docker run -d --name redis -p 6379:6379 redis
@@ -65,13 +65,13 @@ https://community.influxdata.com/t/how-to-connect-grafana-to-influxdbv2-by-influ
     -fetch time convert to string to 
     
     
-    ##########################################  react ####################################################
+    ##########################################  react ##########################
     
     npm i react-router-dom --force   or npm i anylibirary --legacy-peer-deps  // use for unable salved dependency tree error
     
     
     
-        ########################################## for UML sequence diagram diagram ####################################################
+        ########################################## for UML sequence diagram diagram ########################
         1. go to visual studio and install palntuml dependecies
         2. seq.uml
    
@@ -82,7 +82,7 @@ SELECT setval('product_master_product_id_seq',
     (SELECT MAX(product_id) FROM product_master));
     
     
-=================================== create only one database access user =========================================================
+=================================== create only one database access user =======================
 
 -- Create Role First
 CREATE ROLE tagid_genesis_read;
@@ -102,7 +102,7 @@ GRANT tagid_genesis_read TO nitin;
 https://www.youtube.com/watch?v=-2kYJ0gZmCo
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO nitin;
 
-==============================================================================================================================
+===============================================================================
 **git vscode setup**
 git fetch --all
 
