@@ -101,3 +101,31 @@ Environment="INSTALL_PATH=/home/pi/iam-gateway"
 WantedBy=default.target
 
 ---------this file extension is .service --------------
+
+
+**Taking Remote Debugger**
+
+---------------------- Start gateway side command------------------
+
+ mkdir amolsir_testing
+ 
+ cd amolsir_testing/
+ 
+ python3 -m venv venv
+ 
+ source venv/bin/activate
+ 
+ pip3 install -r requirements.txt 
+ 
+ history
+ 
+ --------------- Start pycharm side connect debugger -------------------
+ 
+ 
+ 1. First be sure delete venv from your project while setup venv
+ 2. ![Screenshot from 2023-02-09 12-28-17](https://user-images.githubusercontent.com/68800883/217740369-776dd5df-103a-42a6-aaa9-b65698abbd9a.png)
+ 3. click on on_ssh
+ 4. enter your gateway ip, username, password
+ 5. on location choose which file you want to use choose python3
+ 6. click on create and rerun main.py
+
