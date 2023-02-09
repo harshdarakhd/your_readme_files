@@ -87,12 +87,17 @@ Description=Trial Theft Identity
 [Service]
 # Command to execute when the service is started
 User=pi
+
 Group=pi
+
 WorkingDirectory=home/pi/tagid-trial-theft-identity
+
 ExecStart=/home/pi/tagid-trial-theft-identity/venv/bin/python3  /home/pi/tagid-trial-theft-identity/main.py
+
 Environment="INSTALL_PATH=/home/pi/iam-gateway"
 
 [Install]
+
 WantedBy=default.target
 
 ---------this file extension is .service --------------
