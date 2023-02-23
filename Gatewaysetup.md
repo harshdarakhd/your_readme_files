@@ -129,3 +129,6 @@ WantedBy=default.target
  5. on location choose which file you want to use choose python3
  6. click on create and rerun main.py
 
+**Gateway net connection **
+ curl -X POST http://:8090/login.xml --data-urlencode "mode=191" --data-urlencode "username=" --data-urlencode "password=" --data-urlencode "a=1633529001622" --data-urlencode "producttype=0"
+
