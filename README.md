@@ -20,6 +20,7 @@
   -
 
 ############################# INFLUX DB ############################
+"![Screenshot from 2023-03-31 12-29-06]("https://user-images.githubusercontent.com/68800883/229046678-ade729ac-f252-44f8-8f5c-551939f1db21.png")"
 
 influx v1 dbrp create --db people-counting --rp autogen --bucket-id a681dc0dc3d6dd31 --default --org smarti --token -PfPbsN-HEOL_rH-ydFg_UfSslXjD-ir59yV1WEBITv5SsDovNTK9GmC19CGZ93TQ6MqrDNWoVgx12kc_Qhb9Q==
 
