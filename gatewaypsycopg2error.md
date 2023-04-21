@@ -69,6 +69,7 @@ python3.8 -m venv venv
  1885  python3
  
 http://raspbian.mirror.net.in/raspbian/raspbian/pool/main/p/postgresql-11/libpq5_11.19-0+deb10u1_armhf.deb
+
  **scp libpq5_11.19-0+deb10u1_armhf.deb pi@192.168.71.15:/home/pi**
  
  1886  **sudo apt-get update && apt-get install libpq5 -y**
